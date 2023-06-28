@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Chat App</title>
+</head>
+<body>
+    <div id="message-container"></div>
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <button id="send-button">Send</button>
+    
+    <div id="video-container">
+        <video id="local-video" autoplay></video>
+        <video id="remote-video" autoplay></video>
+    </div>
+    
+    <script src="{% static 'webrtc.js' %}"></script>
+</body>
+</html>
